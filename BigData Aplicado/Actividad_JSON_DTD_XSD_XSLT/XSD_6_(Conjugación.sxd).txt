@@ -1,0 +1,43 @@
+XSD Conjugación.sxd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="TipoTiempo">
+        <xs:sequence>
+            <xs:element name="Singular1" type="xs:string"/>
+            <xs:element name="Singular2" type="xs:string"/>
+            <xs:element name="Singular3" type="xs:string"/>
+            <xs:element name="Plural1" type="xs:string"/>
+            <xs:element name="Plural2" type="xs:string"/>
+            <xs:element name="Plural3" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TipoTiempos">
+        <xs:sequence>
+            <xs:element name="Tiempo" type="TipoTiempo" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TipoModo">
+        <xs:sequence>
+            <xs:element name="Tiempos_Simples" type="TipoTiempos" minOccurs="0"/>
+            <xs:element name="Tiempos_Compuestos" type="TipoTiempos" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="Conjugacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Verbo" type="xs:string"/>
+                <xs:element name="ConjugacionTipo" type="xs:string"/>
+                <xs:element name="Modo" type="TipoModo" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

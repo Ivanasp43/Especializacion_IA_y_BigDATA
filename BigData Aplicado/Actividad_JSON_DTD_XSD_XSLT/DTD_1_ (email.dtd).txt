@@ -1,0 +1,23 @@
+DTD (email.dtd)
+
+<!ELEMENT E-mail (De, Para+, CC+, Asunto, Cuerpo)>
+<!ELEMENT De (#PCDATA)>
+<!ELEMENT Para (#PCDATA)>
+<!ELEMENT CC (#PCDATA)>
+<!ELEMENT Asunto (#PCDATA)>
+<!ELEMENT Cuerpo (#PCDATA)>
+
+VALIDO DE NUEVO EL XML DESARROLLADO EN EL PRIMER EJERCICIO PARA QUE CUMPLA CON LA DTD
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE E-mail SYSTEM "email.dtd">
+<E-mail>
+    <De>JulioAlberto.Lopez@uclm.es</De>
+    <Para>alumnox_cursoiabigdata@gmail.com</Para>
+    <Para>alumnoy_cursoiabigdata@gmail.com</Para>
+    <Para>alumnoz_cursoiabigdata@gmail.com</Para>
+    <CC>julioalbertolopezgomez@gmail.com</CC>
+    <CC>otro_profesor@uclm.es</CC>
+    <Asunto>Tutoría</Asunto>
+    <Cuerpo>Estimado Alumno X. Las tutorías de esta semana se desarrollarán el próximo Jueves de 18:00 a 19:00 horas. Saludos. Julio A.</Cuerpo>
+</E-mail>

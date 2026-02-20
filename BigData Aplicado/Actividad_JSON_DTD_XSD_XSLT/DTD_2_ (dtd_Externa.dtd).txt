@@ -1,0 +1,79 @@
+DTD Externa (Ejemplo2.dtd)
+
+<!ELEMENT Autor (Nombre, Indice)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Indice (Elemento+)>
+
+<!ELEMENT Elemento (#PCDATA | Subelemento | ObraPoetica)*>
+<!ELEMENT Subelemento (#PCDATA | ObraPoetica)*>
+
+<!ELEMENT ObraPoetica (Obra+)>
+<!ELEMENT Obra (Titulo, Lugar, Editorial, Año, Nota?)>
+
+<!ELEMENT Titulo (#PCDATA)>
+<!ELEMENT Lugar (#PCDATA)>
+<!ELEMENT Editorial (#PCDATA)>
+<!ELEMENT Año (#PCDATA)>
+<!ELEMENT Nota (#PCDATA)>
+
+
+
+DOCUMENTO XML VÁLIDO CON DECLARACIÓN EXTERNA E INTERNA
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Autor SYSTEM "ejemplo2.dtd" [
+    <!ENTITY autor "Pedro Salinas">
+]>
+<Autor>
+    <Nombre>&autor;</Nombre>
+    <Indice>
+        <Elemento>
+            Biografía
+            <Subelemento>Primeros años</Subelemento>
+            <Subelemento>Matrimonio y cátedra</Subelemento>
+            <Subelemento>Santander</Subelemento>
+            <Subelemento>Guerra civil y exilio</Subelemento>
+        </Elemento>
+        <Elemento>
+            Poeta del 27
+            <Subelemento>Etapas poéticas</Subelemento>
+            <Subelemento>Poeta del amor</Subelemento>
+        </Elemento>
+        <Elemento>Prosista</Elemento>
+        <Elemento>Dramaturgo</Elemento>
+        <Elemento>
+            Obra
+            <Subelemento>
+                Poesía
+                <ObraPoetica>
+                    <Obra>
+                        <Titulo>Presagio</Titulo>
+                        <Lugar>Madrid</Lugar>
+                        <Editorial>Índice</Editorial>
+                        <Año>1923</Año>
+                    </Obra>
+                    <Obra>
+                        <Titulo>Seguro azar</Titulo>
+                        <Lugar>Madrid</Lugar>
+                        <Editorial>Revista de Occidente</Editorial>
+                        <Año>1929</Año>
+                    </Obra>
+                    <Obra>
+                        <Titulo>Volverse y otros poemas</Titulo>
+                        <Lugar>Milán</Lugar>
+                        <Editorial>All'insegna del pesce d'oro</Editorial>
+                        <Año>1957</Año>
+                    </Obra>
+                </ObraPoetica>
+            </Subelemento>
+            <Subelemento>Teatro</Subelemento>
+            <Subelemento>Traducciones</Subelemento>
+            <Subelemento>Narrativa</Subelemento>
+            <Subelemento>Ensayo</Subelemento>
+            <Subelemento>Epistolario</Subelemento>
+        </Elemento>
+        <Elemento>Referencias</Elemento>
+        <Elemento>Notas</Elemento>
+        <Elemento>Bibliografía</Elemento>
+    </Indice>
+</Autor>

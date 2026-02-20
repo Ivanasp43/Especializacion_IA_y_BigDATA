@@ -1,0 +1,38 @@
+XSD Diploma.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="Diploma">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Institucion" type="xs:string"/>
+                <xs:element name="Asociacion_Reconocimiento" type="xs:string" minOccurs="0"/>
+                <xs:element name="Tipo_Documento" type="xs:string"/>
+                <xs:element name="Estudiante">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nombre_Completo" type="xs:string"/>
+                            <xs:element name="Certificacion" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Titulo_Obtenido" type="xs:string"/>
+                <xs:element name="Lugar_Expedicion" type="xs:string"/>
+                <xs:element name="Fecha_Expedicion" type="xs:string"/>
+                <xs:element name="Firmas_Pendientes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Firma_Alumno" type="xs:string" minOccurs="0"/>
+                            <xs:element name="Firma_Profesor" type="xs:string" minOccurs="0"/>
+                            <xs:element name="Firma_Director" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Nota_Legal" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

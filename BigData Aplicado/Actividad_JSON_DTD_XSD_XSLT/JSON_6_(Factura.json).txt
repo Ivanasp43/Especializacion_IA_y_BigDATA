@@ -1,0 +1,97 @@
+Factura.json
+
+{
+  "FacturaSimplificada": {
+    "Numero": "T190030",
+    "Fecha": "09/25/2019",
+    "Emisor": {
+      "Nombre": "Holded SA",
+      "Direccion": "Joan de Borbó, 101",
+      "Ciudad": "Barcelona",
+      "CodigoPostal": "08001",
+      "Pais": "España",
+      "NIF": "XXXXXXXXX",
+      "Email": "alodia.salas@holded.com",
+      "Telefono": "932 710 167"
+    },
+    "Cliente": {
+      "Nombre": "Holded Technologies",
+      "NIF": "XXXXXXXXX",
+      "Telefono": "932 710 167"
+    },
+    "Conceptos": [
+      {
+        "Descripcion": "Gafas sol Warfare",
+        "Precio": 90.00,
+        "Unidades": 1,
+        "Subtotal": 90.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 18.90,
+        "Total": 108.90
+      },
+      {
+        "Descripcion": "VANS bambas (bamba de color negro old school)",
+        "Precio": 70.00,
+        "Unidades": 1,
+        "Subtotal": 70.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 14.70,
+        "Total": 84.70
+      },
+      {
+        "Descripcion": "beanie (Talla M)",
+        "Precio": 25.00,
+        "Unidades": 1,
+        "Subtotal": 25.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 5.25,
+        "Total": 30.25
+      },
+      {
+        "Descripcion": "tabla de surf (Modelo 6.3)",
+        "Precio": 356.00,
+        "Unidades": 1,
+        "Subtotal": 356.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 74.76,
+        "Total": 430.76
+      },
+      {
+        "Descripcion": "camiseta nike (Negra L)",
+        "Precio": 22.00,
+        "Unidades": 1,
+        "Subtotal": 22.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 4.62,
+        "Total": 26.62
+      },
+      {
+        "Descripcion": "camiseta nike (Blanca XL)",
+        "Precio": 22.00,
+        "Unidades": 1,
+        "Subtotal": 22.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 4.62,
+        "Total": 26.62
+      },
+      {
+        "Descripcion": "Guantes (Piel reforzada / negro)",
+        "Precio": 12.00,
+        "Unidades": 1,
+        "Subtotal": 12.00,
+        "IVA_Porcentaje": 21,
+        "IVA_Monto": 2.52,
+        "Total": 14.52
+      }
+    ],
+    "Totales_Resumen": {
+      "BaseImponible": 597.00,
+      "IVA_21_Monto": 125.37,
+      "TOTAL_FACTURA": 722.37
+    },
+    "Pago": {
+      "Metodo": "Transferencia bancaria",
+      "IBAN": "ES662100184012345679"
+    }
+  }
+}

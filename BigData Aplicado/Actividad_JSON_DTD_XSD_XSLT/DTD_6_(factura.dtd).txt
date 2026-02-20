@@ -1,0 +1,82 @@
+DTD (factura.dtd)
+
+<!ELEMENT FacturaSimplificada (Emisor, Cliente, Conceptos, Totales, Pago)>
+<!ATTLIST FacturaSimplificada
+    numero CDATA #REQUIRED
+    fecha CDATA #REQUIRED
+>
+
+<!ELEMENT Emisor (Nombre, Direccion, Ciudad, CodigoPostal, Pais, NIF, Email?, Telefono?)>
+<!ELEMENT Cliente (Nombre, NIF, Telefono?)>
+
+<!ELEMENT Conceptos (Concepto+)>
+<!ELEMENT Concepto (Descripcion, PrecioUnidad, Unidades, Subtotal, IVA, Total)>
+
+<!ELEMENT Descripcion (#PCDATA)>
+<!ELEMENT PrecioUnidad (#PCDATA)>
+<!ELEMENT Unidades (#PCDATA)>
+<!ELEMENT Subtotal (#PCDATA)>
+<!ELEMENT IVA (#PCDATA)>
+<!ATTLIST IVA
+    porcentaje CDATA #REQUIRED
+>
+<!ELEMENT Total (#PCDATA)>
+
+<!ELEMENT Totales (BaseImponible, IVA, TotalFactura)>
+<!ELEMENT BaseImponible (#PCDATA)>
+<!ELEMENT TotalFactura (#PCDATA)>
+
+<!ELEMENT Pago (Metodo, IBAN)>
+<!ELEMENT Metodo (#PCDATA)>
+<!ELEMENT IBAN (#PCDATA)>
+
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Direccion (#PCDATA)>
+<!ELEMENT Ciudad (#PCDATA)>
+<!ELEMENT CodigoPostal (#PCDATA)>
+<!ELEMENT Pais (#PCDATA)>
+<!ELEMENT NIF (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Telefono (#PCDATA)>
+
+
+
+DOCUMENTO XML VÁLIDO
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FacturaSimplificada SYSTEM "factura.dtd">
+<FacturaSimplificada numero="F190030" fecha="2019-09-25">
+    <Emisor>
+        <Nombre>Holded SA</Nombre>
+        <Direccion>Joan de Borbó, 101</Direccion>
+        <Ciudad>Barcelona</Ciudad>
+        <CodigoPostal>08001</CodigoPostal>
+        <Pais>España</Pais>
+        <NIF>XXXXXXXXX</NIF>
+        <Email>alodia.salas@holded.com</Email>
+        <Telefono>932710167</Telefono>
+    </Emisor>
+    <Cliente>
+        <Nombre>Holded Technologies</Nombre>
+        <NIF>XXXXXXXXX</NIF>
+        <Telefono>932710167</Telefono>
+    </Cliente>
+    <Conceptos>
+        <Concepto>
+            <Descripcion>Gafas sol Warfare</Descripcion>
+            <PrecioUnidad>90.00</PrecioUnidad>
+            <Unidades>1</Unidades>
+            <Subtotal>90.00</Subtotal>
+            <IVA porcentaje="21">18.90</IVA>
+            <Total>108.90</Total>
+        </Concepto>
+        </Conceptos>
+    <Totales>
+        <BaseImponible>597.00</BaseImponible>
+        <IVA porcentaje="21">125.37</IVA>
+        <TotalFactura>722.37</TotalFactura>
+    </Totales>
+    <Pago>
+        <Metodo>Transferencia bancaria</Metodo>
+        <IBAN>ES662100184012345679</IBAN>
+    </Pago>
+</FacturaSimplificada>

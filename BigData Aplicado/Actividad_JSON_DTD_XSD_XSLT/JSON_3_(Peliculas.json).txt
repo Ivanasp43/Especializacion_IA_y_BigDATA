@@ -1,0 +1,53 @@
+Películas.json
+
+{
+  "Estrenos_Disney": {
+    "Pelicula": [
+      {
+        "Titulo": "Blancanieves y los siete enanitos",
+        "Fecha": "14/12/1937",
+        "Directores": "David Hand, Perce Pearce, William Cottrell, Larry Morey, Wilfred Jackson y Ben Sharpsteen",
+        "Escritores": "Ted Sears, Richard Creedon, Otto Englander, Dick Rickard, Earl Hurd, Merrill De Maris, Dorothy Ann Blank y Webb Smith",
+        "Productores": "Walt Disney",
+        "Compositores": "Frank Churchill, Paul Smith, Leigh Harline",
+        "Color": 1
+      },
+      {
+        "Titulo": "Pinocho",
+        "Fecha": "31/01/1940",
+        "Directores": "Ben Sharpsteen (Supervisor), Hamilton Luske (Supervisor), William \"Bill\" Roberts, Norman Ferguson, Jack Kinney, Wilfred Jackson and T. Hee",
+        "Escritores": "Ted Sears, Otto Englander, Webb Smith , William Cottrell, Joseph Sabo, Erdman Penner y Aurelius Battaglia",
+        "Productores": "Walt Disney",
+        "Compositores": "Leigh Harline, Paul J. Smith y Ned Washington",
+        "Color": 1
+      },
+      {
+        "Titulo": "Fantasía",
+        "Fecha": "06/11/1940",
+        "Directores": "James Algar, Samuel Armstrong, Ford Beebe Jr, Norman Ferguson, Jim Handley, Thornton Hee, Wilfred Jackson, Hamilton Luske, Bill Roberts, Paul Satterfield y Ben Sharpsteen.",
+        "Escritores": "Lee Blair, Elmer Plummer, Phil Dike",
+        "Productores": "Walt Disney y Ben Sharpsteen",
+        "Compositores": "Stephen Csillag",
+        "Color": 1
+      },
+      {
+        "Titulo": "Dumbo",
+        "Fecha": "16/10/1941",
+        "Directores": "Ben Sharpsteen, Norman Ferguson, Wilfred Jackson, William \"Bill\" Roberts, Jack Kinney y Samuel Armstrong",
+        "Escritores": "Joe Grant, Dick Huemer y Otto Englander",
+        "Productores": "Walt Disney",
+        "Compositores": "Frank Churchill y Oliver Wallace",
+        "Color": 1
+      },
+      {
+        "Titulo": "Bambi",
+        "Fecha": "12/04/1942",
+        "Directores": "David Hand, James Algar, Bill Roberts, Norman Wright, Samuel Armstrong, Paul Satterfield, Graham Heid",
+        "Escritores": "Perce Pearce, Larry Morey, Vernon Stallings, Melvin Shaw, Carl Fallberg, Chuck Couch y Ralph Wright",
+        "Productores": "Walt Disney",
+        "Compositores": "Frank Churchill y Edward H. Plumb",
+        "Color": 1
+      }
+    ]
+  }
+}

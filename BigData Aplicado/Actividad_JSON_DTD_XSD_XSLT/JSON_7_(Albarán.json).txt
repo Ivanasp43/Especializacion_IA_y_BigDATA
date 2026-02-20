@@ -1,0 +1,50 @@
+Albarán.json
+
+{
+  "Albaran": {
+    "Numero": "ALB2025-0015",
+    "Fecha": "2025-10-31",
+    "Cliente": {
+      "Nombre": "TechSolutions Global S.L.",
+      "NIF": "B12345678",
+      "Domicilio": "Calle Innovación, 42",
+      "Poblacion": "Madrid",
+      "Pago": "Transferencia 30 días"
+    },
+    "Detalle": [
+      {
+        "Cantidad": 5,
+        "Codigo": "MON-2700",
+        "Referencia_Articulo": "Monitor LED 27 pulgadas Ultra HD",
+        "Precio_Unidad": 350.50,
+        "Total_Euros": 1752.50
+      },
+      {
+        "Cantidad": 10,
+        "Codigo": "KB-MEC03",
+        "Referencia_Articulo": "Teclado mecánico RGB 'Gaming'",
+        "Precio_Unidad": 75.99,
+        "Total_Euros": 759.90
+      },
+      {
+        "Cantidad": 2,
+        "Codigo": "SERV-HP-R4",
+        "Referencia_Articulo": "Servidor de rack HP ProLiant DL380",
+        "Precio_Unidad": 2100.00,
+        "Total_Euros": 4200.00
+      }
+    ],
+    "Totales": {
+      "Base_Imponible": 6712.40
+      /* Nota: Aunque el albarán no muestra el IVA, este campo se incluye para completitud si fuese necesario */
+    },
+    "Observaciones": "Entrega parcial pendiente de 5 teclados adicionales. Embalaje en perfecto estado.",
+    "Logistica": {
+      "Agente": "Logística Rápida S.A.",
+      "Envio_Por": "Transporte terrestre urgente",
+      "Bultos": 4,
+      "Portes": "Debidos"
+    },
+    "Conforme_Cliente": "Firmado y recibido"
+  }
+}

@@ -1,0 +1,29 @@
+XSD Futbol.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="TipoEquipo">
+        <xs:attribute name="nombre" type="xs:string" use="required"/>
+        <xs:attribute name="PJ" type="xs:integer" use="required"/>
+        <xs:attribute name="V" type="xs:integer" use="required"/>
+        <xs:attribute name="E" type="xs:integer" use="required"/>
+        <xs:attribute name="D" type="xs:integer" use="required"/>
+        <xs:attribute name="GF" type="xs:integer" use="required"/>
+        <xs:attribute name="GC" type="xs:integer" use="required"/>
+        <xs:attribute name="DG" type="xs:integer" use="required"/>
+        <xs:attribute name="Pts" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="Clasificacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Equipo" type="TipoEquipo" minOccurs="4" maxOccurs="4"/>
+            </xs:sequence>
+            <xs:attribute name="temporada" type="xs:string" use="required"/>
+            <xs:attribute name="grupo" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

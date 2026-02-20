@@ -1,0 +1,68 @@
+XSD Albarán.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="TipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="TipoDetalle">
+        <xs:sequence>
+            <xs:element name="Cantidad" type="xs:integer"/>
+            <xs:element name="Codigo" type="xs:string"/>
+            <xs:element name="Referencia_Articulo" type="xs:string"/>
+            <xs:element name="Precio_Unidad" type="TipoPrecio"/>
+            <xs:element name="Total_Euros" type="TipoPrecio"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Albaran">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Numero" type="xs:string"/>
+                <xs:element name="Fecha" type="xs:date"/>
+                <xs:element name="Cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nombre" type="xs:string"/>
+                            <xs:element name="NIF" type="xs:string"/>
+                            <xs:element name="Domicilio" type="xs:string"/>
+                            <xs:element name="Poblacion" type="xs:string"/>
+                            <xs:element name="Pago" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Detalle">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Articulo" type="TipoDetalle" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Totales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Base_Imponible" type="TipoPrecio"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Observaciones" type="xs:string" minOccurs="0"/>
+                <xs:element name="Logistica">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Agente" type="xs:string"/>
+                            <xs:element name="Envio_Por" type="xs:string"/>
+                            <xs:element name="Bultos" type="xs:integer"/>
+                            <xs:element name="Portes" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Conforme_Cliente" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

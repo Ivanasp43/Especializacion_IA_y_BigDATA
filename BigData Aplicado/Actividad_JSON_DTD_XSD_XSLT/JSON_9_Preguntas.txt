@@ -1,0 +1,105 @@
+Preguntas:
+
+
+a. ¿Qué crees que representan los datos? Explica detalladamente cómo están organizados.
+
+
+Los datos representan el resultado de una búsqueda de imágenes.
+Organización Detallada:
+
+1- ResultSet (Objeto Raíz): Contiene la información global de la búsqueda.
+
+	- Metadatos de la Búsqueda: Los campos totalResultsAvailable, totalResultsReturned, y firstResultPosition 
+	indican cuántos resultados totales existen, cuántos se muestran en este conjunto, y a partir de qué posición 
+	empieza el conjunto.
+
+	- Resultados Específicos: El campo Result es un array que almacena la lista de las imágenes encontradas.
+
+2- Result (Array de Resultados): Es un vector de objetos, donde cada objeto representa una imagen individual.
+
+	- Información de la Imagen: Cada objeto Result almacena datos como Title, Summary (una descripción o contexto
+	 de la imagen), Url (la ubicación directa de la imagen), ClickUrl y RefererUrl (la fuente o página web que enlaza
+	 a la imagen).
+
+	- Metadatos Técnicos: También incluye metadatos como FileSize (tamaño en bytes), FileFormat (tipo de archivo), 
+	Height y Width (dimensiones en 	píxeles).
+
+	- Thumbnail (Objeto Anidado): Este es un objeto dentro de cada 	Result que contiene la URL y las dimensiones 
+	(Height, Width) de la vista previa o 	miniatura de la imagen.
+
+
+b. ¿Cuántos vectores o arrays hay definidos en este fragmento de código? ¿Qué almacena cada posición del vector?
+
+Hay dos vectores o arrays definidos en este fragmento de código:
+
+1- Result: Es el array principal que está dentro del objeto ResultSet.
+
+	- ¿Qué almacena?: Almacena una colección de objetos, donde cada objeto representa la información completa de una 
+	imagen individual que coincide con la búsqueda. En este caso, almacena 2 objetos (los dos resultados de la búsqueda).
+
+2- El array implícito de ResultSet (la colección raíz): Aunque no tiene un nombre de clave explícito como Result, el objeto 
+ResultSet puede considerarse la primera posición de un array de resultados si la búsqueda permitiera múltiples conjuntos. 
+Sin embargo, en el contexto estricto de arrays definidos por corchetes []: solo está definido explícitamente el array Result.
+
+
+c. ¿Cuántos atributos de tipo numérico hay en el archivo y a qué atributo y objeto corresponden?
+
+
+1- Hay 3 atributos que son estrictamente numéricos (sin comillas) en la parte superior (ResultSet): totalResultsReturned, 
+firstResultPosition. Además, hay dos instancias de FileSize numéricas dentro de cada objeto Result, sumando un total de 
+5 valores numéricos estrictos.
+
+2- Sin embargo, si se incluyen los atributos que representan números pero están almacenados como string, el total es 13.
+
+Atributos de tipo Numérico Estricto (Sin comillas):
+- totalResultsReturned (en ResultSet)
+- firstResultPosition (en ResultSet)
+- FileSize (en el primer objeto Result)
+- FileSize (en el segundo objeto Result)
+
+
+    Atributo	         Objeto Contenedor	          Tipo (Entero/String Numérica)
+
+totalResultsAvailable	ResultSet                       String (aunque representa un número)
+totalResultsReturned	ResultSet                       Numérico (Entero)
+firstResultPosition	ResultSet	                Numérico (Entero)
+FileSize	        Result (Resultado 1)	        Numérico (Entero)
+Height	                Result (Resultado 1)	        String(aunque representa un número)
+Width	                Result (Resultado 1)	        String(aunque representa un número)
+Height	                Thumbnail (Resultado 1)	        String(aunque representa un número)
+Width	                Thumbnail (Resultado 1)	        String(aunque representa un número)
+FileSize	        Result (Resultado 2)	        Numérico (Entero)
+Height	                Result (Resultado 2)	        String(aunque representa un número)
+Width	                Result (Resultado 2)	        String(aunque representa un número)
+Height	                Thumbnail (Resultado 2)	        String(aunque representa un número)
+Width	                Thumbnail (Resultado 2)	        String(aunque representa un número)
+
+
+
+d. Minificar un archivo JSON consiste en eliminar saltos de línea, tabulaciones, espacios innecesarios etc. 
+buscando que el archivo resultante ocupe menos espacio y sea más fácilmenteinterpretable por un computador. 
+Existen herramientas web que, dado un archivo JSON, permiten obtener su representación minificada como 
+http://www.webtoolkitonline.com/jsonminifier. html o http://www.httputility.net/json-minifier.aspx. Entrar 
+en alguna de estas páginas para obtener la representación minificada del archivo JSON y describir qué cambios 
+se han 	producido.
+
+
+Al utilizar una herramienta de minificación, los principales cambios que se producen son:
+
+1- Eliminación de saltos de línea: Todo el código se coloca en una sola línea.
+
+2- Eliminación de espacios y tabulaciones: Se eliminan todos los espacios y tabulaciones utilizados para la indentación y la legibilidad humana. Solo se conservan los espacios estrictamente necesarios (por ejemplo, dentro de los valores de las cadenas de texto, como los títulos o summaries).
+
+EJEMPLO: 
+
+{"ResultSet":{"totalResultsAvailable":"1827221","totalResultsReturned":2,"firstResultPosition":1,"Result":[{"Title":"potato jpg","Summary":"Kentang Si bungsu dari keluarga Solanum tuberosum L ini ternyata memiliki khasiat untuk mengurangi kerutan jerawat bintik hitam dan kemerahan pada kulit Gunakan seminggu sekali como","Url":"http://www.aprenderaprogramar.com/spaw/uploads /images/potato.jpg","ClickUrl":"http://www. aprenderaprogramar.com/spaw/uploads/images/potato.jpg","RefererUrl":"http://www.mediaindonesia.com/mediaperempuan/index.php?ar_id=Nzkw","FileSize":22630,"FileFormat":"jpeg","Height":"362","Width":"532","Thumbnail":{"Url":"http://thm-a01.yimg.com/nimage/557094559c18f16a","Height":"98","Width":"145"}},{"Title":"potato jpg","Summary":"Introduction of puneri aloo This is a traditional potato preparation flavoured with curry leaves and peanuts and can be eaten on fasting day Preparation time 10 min","Url":"http://www.infovisual.info/01/photo/potato.jpg","ClickUrl":"http://www.infovisual.info/01/photo/potato.jpg","RefererUrl":"http://aprenderaprogramar.com.com/puneri-alooindian-% 20recipe","FileSize":119398,"FileFormat":"jpeg","Height":"685","Width":"1024","Thumbnail":{"Url":"http://thm-a01.yimg.com/nimage/7fa23212efe84b64","Height":"107","Width":"160"}}]}}
+
+
+
+Cambios Producidos:
+
+- Reducción de tamaño: El archivo ocupa significativamente menos espacio en disco.
+
+- Pérdida de legibilidad: La estructura visual del JSON (indentación y saltos de línea) desaparece, haciendo que sea difícil de leer o editar manualmente.
+
+- Eficiencia para máquinas: El archivo es más rápido de analizar (parsear) para un software o un servidor, ya que el código no tiene que procesar caracteres de formato innecesarios.

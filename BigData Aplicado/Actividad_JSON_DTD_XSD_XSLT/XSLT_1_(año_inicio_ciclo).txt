@@ -1,0 +1,21 @@
+XSLT PARA VISUALIZAR EL AÑO DE INICIO DE CICLO
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:output method="text" encoding="UTF-8"/>
+
+  <xsl:template match="/ies">
+    <xsl:text>Años de Inicio de los Ciclos Formativos:&#xA;</xsl:text>
+    <xsl:apply-templates select="ciclos/ciclo"/>
+  </xsl:template>
+
+  <xsl:template match="ciclo">
+    <xsl:value-of select="nombre"/>
+    <xsl:text> (ID: </xsl:text>
+    <xsl:value-of select="@id"/>
+    <xsl:text>) => Año de inicio: </xsl:text>
+    <xsl:value-of select="decretoTitulo/@año"/>
+    <xsl:text>&#xA;</xsl:text> </xsl:template>
+
+</xsl:stylesheet>

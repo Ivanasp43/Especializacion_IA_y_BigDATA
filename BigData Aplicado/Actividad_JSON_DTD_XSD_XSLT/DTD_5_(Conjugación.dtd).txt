@@ -1,0 +1,66 @@
+DTD (Conjugación.dtd)
+
+<!ELEMENT Conjugacion (Verbo, ConjugacionTipo, Modo+)>
+<!ELEMENT Verbo (#PCDATA)>
+<!ELEMENT ConjugacionTipo (#PCDATA)>
+
+<!ELEMENT Modo (Tiempos_Simples?, Tiempos_Compuestos?, Tiempo*)>
+<!ATTLIST Modo
+    nombre CDATA #REQUIRED
+>
+
+<!ELEMENT Tiempos_Simples (Tiempo+)>
+<!ELEMENT Tiempos_Compuestos (Tiempo+)>
+
+<!ELEMENT Tiempo (Singular1, Singular2, Singular3, Plural1, Plural2, Plural3)>
+<!ATTLIST Tiempo
+    nombre CDATA #REQUIRED
+>
+
+<!ELEMENT Singular1 (#PCDATA)>
+<!ELEMENT Singular2 (#PCDATA)>
+<!ELEMENT Singular3 (#PCDATA)>
+<!ELEMENT Plural1 (#PCDATA)>
+<!ELEMENT Plural2 (#PCDATA)>
+<!ELEMENT Plural3 (#PCDATA)>
+
+
+
+DOCUMENTO XML VÁLIDO CON REFERENCIA A LA DTD
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Conjugacion SYSTEM "ejemplo5.dtd">
+<Conjugacion>
+    <Verbo>Cantar</Verbo>
+    <ConjugacionTipo>Primera</ConjugacionTipo>
+    <Modo nombre="Indicativo">
+        <Tiempos_Simples>
+            <Tiempo nombre="Presente">
+                <Singular1>Yo canto</Singular1>
+                <Singular2>Tú cantas</Singular2>
+                <Singular3>Él canta</Singular3>
+                <Plural1>Nosotros cantamos</Plural1>
+                <Plural2>Vosotros cantáis</Plural2>
+                <Plural3>Ellos cantan</Plural3>
+            </Tiempo>
+            <Tiempo nombre="Pretérito imperfecto">
+                <Singular1>Yo cantaba</Singular1>
+                <Singular2>Tú cantabas</Singular2>
+                <Singular3>Él cantaba</Singular3>
+                <Plural1>Nosotros cantábamos</Plural1>
+                <Plural2>Vosotros cantabais</Plural2>
+                <Plural3>Ellos cantaban</Plural3>
+            </Tiempo>
+            </Tiempos_Simples>
+        <Tiempos_Compuestos>
+            <Tiempo nombre="Pretérito perfecto compuesto">
+                <Singular1>Yo he cantado</Singular1>
+                <Singular2>Tú has cantado</Singular2>
+                <Singular3>Él ha cantado</Singular3>
+                <Plural1>Nosotros hemos cantado</Plural1>
+                <Plural2>Vosotros habéis cantado</Plural2>
+                <Plural3>Ellos han cantado</Plural3>
+            </Tiempo>
+            </Tiempos_Compuestos>
+    </Modo>
+    </Conjugacion>

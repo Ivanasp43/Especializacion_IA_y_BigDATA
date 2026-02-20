@@ -1,0 +1,123 @@
+DTD (DeclaraciónInternayExterna.dtd)
+
+<!ELEMENT Estrenos_Disney (Pelicula+)>
+<!ELEMENT Pelicula (Titulo, Fecha, Director+, Escritor+, Productor+, Compositor+)>
+<!ELEMENT Titulo (#PCDATA)>
+<!ELEMENT Fecha (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Escritor (#PCDATA)>
+<!ELEMENT Productor (#PCDATA)>
+<!ELEMENT Compositor (#PCDATA)>
+
+
+
+DECLARACIÓN INTERNA Y EXTERNA DENTRO DEL XML
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Estrenos_Disney SYSTEM "ejemplo3.dtd" [
+    <!ENTITY distribuidora "Walt Disney Pictures">
+]>
+<Estrenos_Disney>
+    <Pelicula>
+        <Titulo>Blancanieves y los siete enanitos</Titulo>
+        <Fecha>14/12/1937</Fecha>
+        <Director>David Hand</Director>
+        <Director>Perce Pearce</Director>
+        <Director>William Cottrell</Director>
+        <Director>Larry Morey</Director>
+        <Director>Wilfred Jackson</Director>
+        <Director>Ben Sharpsteen</Director>
+        <Escritor>Ted Sears</Escritor>
+        <Escritor>Richard Creedon</Escritor>
+        <Escritor>Otto Englander</Escritor>
+        <Escritor>Dick Rickard</Escritor>
+        <Escritor>Earl Hurd</Escritor>
+        <Escritor>Merrill De Maris</Escritor>
+        <Escritor>Dorothy Ann Blank</Escritor>
+        <Escritor>Webb Smith</Escritor>
+        <Productor>Walt Disney</Productor>
+        <Compositor>Frank Churchill</Compositor>
+        <Compositor>Paul Smith</Compositor>
+        <Compositor>Leigh Harline</Compositor>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>Pinocho</Titulo>
+        <Fecha>31/01/1940</Fecha>
+        <Director>Ben Sharpsteen (Supervisor)</Director>
+        <Director>Hamilton Luske (Supervisor)</Director>
+        <Director>William "Bill" Roberts</Director>
+        <Director>Norman Ferguson</Director>
+        <Director>Jack Kinney</Director>
+        <Director>Wilfred Jackson</Director>
+        <Director>T. Hee</Director>
+        <Escritor>Ted Sears</Escritor>
+        <Escritor>Otto Englander</Escritor>
+        <Escritor>Webb Smith</Escritor>
+        <Escritor>William Cottrell</Escritor>
+        <Escritor>Joseph Sabo</Escritor>
+        <Escritor>Erdman Penner</Escritor>
+        <Escritor>Aurelius Battaglia</Escritor>
+        <Productor>Walt Disney</Productor>
+        <Compositor>Leigh Harline</Compositor>
+        <Compositor>Paul J. Smith</Compositor>
+        <Compositor>Ned Washington</Compositor>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>Fantasía</Titulo>
+        <Fecha>06/11/1940</Fecha>
+        <Director>James Algar</Director>
+        <Director>Samuel Armstrong</Director>
+        <Director>Ford Beebe Jr</Director>
+        <Director>Norman Ferguson</Director>
+        <Director>Jim Handley</Director>
+        <Director>Thornton Hee</Director>
+        <Director>Wilfred Jackson</Director>
+        <Director>Hamilton Luske</Director>
+        <Director>Bill Roberts</Director>
+        <Director>Paul Satterfield</Director>
+        <Director>Ben Sharpsteen</Director>
+        <Escritor>Lee Blair</Escritor>
+        <Escritor>Elmer Plummer</Escritor>
+        <Escritor>Phil Dike</Escritor>
+        <Productor>Walt Disney</Productor>
+        <Productor>Ben Sharpsteen</Productor>
+        <Compositor>Stephen Csillag</Compositor>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>Dumbo</Titulo>
+        <Fecha>16/10/1941</Fecha>
+        <Director>Ben Sharpsteen</Director>
+        <Director>Norman Ferguson</Director>
+        <Director>Wilfred Jackson</Director>
+        <Director>William "Bill" Roberts</Director>
+        <Director>Jack Kinney</Director>
+        <Director>Samuel Armstrong</Director>
+        <Escritor>Joe Grant</Escritor>
+        <Escritor>Dick Huemer</Escritor>
+        <Escritor>Otto Englander</Escritor>
+        <Productor>Walt Disney</Productor>
+        <Compositor>Frank Churchill</Compositor>
+        <Compositor>Oliver Wallace</Compositor>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>Bambi</Titulo>
+        <Fecha>12/04/1942</Fecha>
+        <Director>David Hand</Director>
+        <Director>James Algar</Director>
+        <Director>Bill Roberts</Director>
+        <Director>Norman Wright</Director>
+        <Director>Samuel Armstrong</Director>
+        <Director>Paul Satterfield</Director>
+        <Director>Graham Heid</Director>
+        <Escritor>Perce Pearce</Escritor>
+        <Escritor>Larry Morey</Escritor>
+        <Escritor>Vernon Stallings</Escritor>
+        <Escritor>Melvin Shaw</Escritor>
+        <Escritor>Carl Fallberg</Escritor>
+        <Escritor>Chuck Couch</Escritor>
+        <Escritor>Ralph Wright</Escritor>
+        <Productor>Walt Disney</Productor>
+        <Compositor>Frank Churchill</Compositor>
+        <Compositor>Edward H. Plumb</Compositor>
+    </Pelicula>
+</Estrenos_Disney>

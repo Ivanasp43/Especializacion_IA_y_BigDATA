@@ -1,0 +1,128 @@
+Obras poéticas.json
+
+{
+  "Autor": {
+    "Nombre_Apellido": "Pedro Salinas",
+    "Indice": {
+      "Elemento": [
+        {
+          "Nombre": "Biografía",
+          "Subelemento": [
+            "Primeros años",
+            "Matrimonio y cátedra",
+            "Santander",
+            "Guerra civil y exilio"
+          ]
+        },
+        {
+          "Nombre": "Poeta del 27",
+          "Subelemento": [
+            "Etapas poéticas",
+            "Poeta del amor"
+          ]
+        },
+        "Prosista",
+        "Dramaturgo",
+        {
+          "Nombre": "Obra",
+          "Subelemento": [
+            {
+              "Nombre": "Poesía",
+              "ObraPoetica": [
+                {
+                  "Titulo": "Presagio",
+                  "Lugar": "Madrid",
+                  "Editorial": "Índice",
+                  "Año": 1923
+                },
+                {
+                  "Titulo": "Seguro azar",
+                  "Lugar": "Madrid",
+                  "Editorial": "Revista de Occidente",
+                  "Año": 1929
+                },
+                {
+                  "Titulo": "Fábula y signo",
+                  "Lugar": "Madrid",
+                  "Editorial": "Plutarco",
+                  "Año": 1931
+                },
+                {
+                  "Titulo": "La voz a ti debida",
+                  "Lugar": "Madrid",
+                  "Editorial": "Signo",
+                  "Año": 1933
+                },
+                {
+                  "Titulo": "Razón de amor",
+                  "Lugar": "Madrid",
+                  "Editorial": "Ediciones del Árbol; Cruz y Raya",
+                  "Año": 1936
+                },
+                {
+                  "Titulo": "Lost Angel and Other Poems",
+                  "Lugar": "Baltimore",
+                  "Editorial": "The Johns Hopkins Press",
+                  "Año": 1938,
+                  "Nota": "Antología bilingüe con poemas inéditos. Trad. de Eleanor L. Thurnbull."
+                },
+                {
+                  "Titulo": "Poesía junta",
+                  "Lugar": "Buenos Aires",
+                  "Editorial": "Losada",
+                  "Año": 1942
+                },
+                {
+                  "Titulo": "El contemplado (Mar; poema)",
+                  "Lugar": "México",
+                  "Editorial": "Nueva Floresta; Stylo",
+                  "Año": 1946
+                },
+                {
+                  "Titulo": "Todo más claro y otros poemas",
+                  "Lugar": "Buenos Aires",
+                  "Editorial": "Sudamericana",
+                  "Año": 1949
+                },
+                {
+                  "Titulo": "Poesías completas",
+                  "Lugar": "Madrid",
+                  "Editorial": "Aguilar",
+                  "Año": 1955,
+                  "Nota": "Incluye el libro inédito Confianza."
+                },
+                {
+                  "Titulo": "Poesías completas",
+                  "Lugar": "Madrid",
+                  "Editorial": "Aguilar",
+                  "Año": 1956,
+                  "Nota": "Edición de Juan Marichal."
+                },
+                {
+                  "Titulo": "Volverse y otros poemas",
+                  "Lugar": "Milán",
+                  "Editorial": "All'insegna del pesce d'oro",
+                  "Año": 1957
+                },
+                {
+                  "Titulo": "Poesía completas",
+                  "Lugar": "Barcelona",
+                  "Editorial": "Barral",
+                  "Año": 1971
+                }
+              ]
+            },
+            "Teatro",
+            "Traducciones",
+            "Narrativa",
+            "Ensayo",
+            "Epistolario"
+          ]
+        },
+        "Referencias",
+        "Notas",
+        "Bibliografía"
+      ]
+    }
+  }
+}

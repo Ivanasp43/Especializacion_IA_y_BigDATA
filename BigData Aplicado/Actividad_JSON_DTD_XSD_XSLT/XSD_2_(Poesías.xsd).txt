@@ -1,0 +1,58 @@
+XSD Poesías.sxd
+
+EXTERNO
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="TipoObra">
+        <xs:sequence>
+            <xs:element name="Titulo" type="xs:string"/>
+            <xs:element name="Lugar" type="xs:string"/>
+            <xs:element name="Editorial" type="xs:string"/>
+            <xs:element name="Año" type="xs:integer"/>
+            <xs:element name="Nota" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TipoObraPoetica">
+        <xs:sequence>
+            <xs:element name="Obra" type="TipoObra" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+
+
+INTERNO
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="TipoSubElemento">
+        <xs:sequence>
+            <xs:element name="Nombre" type="xs:string"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Subelemento" type="xs:string"/>
+                <xs:element name="ObraPoetica" type="TipoObraPoetica"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Autor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Nombre" type="xs:string"/>
+                <xs:element name="Indice">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Elemento" type="TipoSubElemento" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    </xs:schema>

@@ -1,0 +1,97 @@
+XSD Factura.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="TipoMonetario">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="TipoConcepto">
+        <xs:sequence>
+            <xs:element name="Descripcion" type="xs:string"/>
+            <xs:element name="PrecioUnidad" type="TipoMonetario"/>
+            <xs:element name="Unidades" type="xs:integer"/>
+            <xs:element name="Subtotal" type="TipoMonetario"/>
+            <xs:element name="IVA">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="TipoMonetario">
+                            <xs:attribute name="porcentaje" type="xs:integer" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Total" type="TipoMonetario"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TipoTotales">
+        <xs:sequence>
+            <xs:element name="BaseImponible" type="TipoMonetario"/>
+            <xs:element name="IVA">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="TipoMonetario">
+                            <xs:attribute name="porcentaje" type="xs:integer" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="TotalFactura" type="TipoMonetario"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="FacturaSimplificada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Emisor">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="Nombre" type="xs:string"/>
+                            <xs:element name="Direccion" type="xs:string"/>
+                            <xs:element name="Ciudad" type="xs:string"/>
+                            <xs:element name="CodigoPostal" type="xs:string"/>
+                            <xs:element name="Pais" type="xs:string"/>
+                            <xs:element name="NIF" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string" minOccurs="0"/>
+                            <xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nombre" type="xs:string"/>
+                            <xs:element name="NIF" type="xs:string"/>
+                            <xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Conceptos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Concepto" type="TipoConcepto" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Totales" type="TipoTotales"/>
+                <xs:element name="Pago">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Metodo" type="xs:string"/>
+                            <xs:element name="IBAN" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:string" use="required"/>
+            <xs:attribute name="fecha" type="xs:date" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+

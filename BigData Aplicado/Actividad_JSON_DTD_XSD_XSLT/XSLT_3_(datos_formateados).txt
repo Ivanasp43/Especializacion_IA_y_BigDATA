@@ -1,0 +1,36 @@
+XSLT PARA MOSTRAR DATOS FORMATEADOS DE MANERA ESTÉTICA
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+
+  <xsl:template match="/ies">
+    <html>
+      <head>
+        <title>Detalle de Ciclos</title>
+      </head>
+      <body>
+        <h1>Detalles de los Ciclos en <xsl:value-of select="@nombre"/></h1>
+        
+        <xsl:apply-templates select="ciclos/ciclo"/>
+        
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="ciclo">
+    <hr/>
+    <h2><xsl:value-of select="nombre"/> (<xsl:value-of select="@id"/>)</h2>
+    
+    <ul>
+      <li><strong>Grado:</strong> <xsl:value-of select="grado"/></li>
+      <li>
+        <strong>Decreto de Título:</strong> Expedido en el año 
+        <xsl:value-of select="decretoTitulo/@año"/>
+      </li>
+    </ul>
+    
+  </xsl:template>
+
+</xsl:stylesheet>

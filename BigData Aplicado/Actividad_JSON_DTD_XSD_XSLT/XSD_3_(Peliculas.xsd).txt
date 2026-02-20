@@ -1,0 +1,33 @@
+XSD Peliculas.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="Estrenos_Disney">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Pelicula" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Titulo" type="xs:string"/>
+                            <xs:element name="Fecha">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}/\d{2}/\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Director" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                            <xs:element name="Escritor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                            <xs:element name="Productor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                            <xs:element name="Compositor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                            <xs:element name="Color" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

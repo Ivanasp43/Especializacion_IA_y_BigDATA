@@ -1,0 +1,15 @@
+email.json
+
+{
+  "E-mail": {
+    "De": "JulioAlberto.Lopez@uclm.es",
+    "Para": [
+      "alumnox_cursoiabigdata@gmail.com",
+      "alumnoy_cursoiabigdata@gmail.com",
+      "alumnoz_cursoiabigdata@gmail.com"
+    ],
+    "CC": "julioalbertolopezgomez@gmail.com",
+    "Asunto": "Tutoría",
+    "Cuerpo": "Estimado Alumno X. Las tutorías de este semana se desarrollarán el próximo Jueves de 18:00 a 19:00 horas. Saludos. Julio A."
+  }
+}
