@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Escribe un documento XML bien formado para representar la clasificación del grupo A de la Champinos League de la temporada 2019-2020  -->
+
+<!-- <Clasificacion>
+   <Temporada> 2019-2020 </Temporada>
+   <Grupo> A </Grupo>
+   <Equipo> PSG
+      <PJ>  6  </PJ>
+      <V>   5  </V>
+      <E>   1  </E>
+      <D>   0  </D>
+      <GF>  17 </GF>
+      <GC>  2  </GC>
+      <DG>  15 </DG>
+      <Pts> 16 </Pts>
+   </Equipo>
+
+   <Equipo> Real Madrid 
+      <PJ>  6  </PJ>
+      <V>   3  </V>
+      <E>   2  </E>
+      <D>   1  </D>
+      <GF>  14 </GF>
+      <GC>  8  </GC>
+      <DG>  6  </DG>
+      <Pts> 11 </Pts>
+   </Equipo>   
+
+   <Equipo> Club Brujas
+      <PJ>  6  </PJ>
+      <V>   0  </V>
+      <E>   3  </E>
+      <D>   3  </D>
+      <GF>  4  </GF>
+      <GC>  12 </GC>
+      <DG>  -8 </DG>
+      <Pts> 3  </Pts>
+   </Equipo>
+
+   <Equipo> Galatasaray
+      <PJ>  6   </PJ>
+      <V>   0   </V>
+      <E>   2   </E>
+      <D>   4   </D>
+      <GF>  1   </GF>
+      <GC>  14  </GC>
+      <DG>  -13 </DG>
+      <Pts> 2   </Pts>
+   </Equipo>
+   
+</Clasificacion>
+-->
+
+<!-- Modificación -->
+
+<Clasificacion temporada="2019-2020" grupo="A">
+   <Equipo 
+      nombre="PSG"
+      PJ="6"
+      V="5"
+      E="1"
+      D="0"
+      GF="17"
+      GC="2"
+      DG="15"
+      Pts="16"
+   />
+   
+   <Equipo 
+      nombre="Real Madrid"
+      PJ="6"
+      V="3"
+      E="2"
+      D="1"
+      GF="14"
+      GC="8"
+      DG="6"
+      Pts="11"
+   />
+
+   <Equipo  
+      nombre="Club Brujas"
+      PJ="6"
+      V="0"
+      E="3"
+      D="3"
+      GF="4"
+      GC="12"
+      DG="-8"
+      Pts="3"
+    />
+
+     <Equipo  
+      nombre="Galatasaray"
+      PJ="6"
+      V="0"
+      E="2"
+      D="4"
+      GF="1"
+      GC="14"
+      DG="-13"
+      Pts="2"
+    />
+
+</Clasificacion>
+

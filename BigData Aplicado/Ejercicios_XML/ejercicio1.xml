@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Escribe un documento XML bien formado para representar el siguiente correo electrónico
+
+	De: JulioAlberto.Lopez@uclm.es
+	Para: alumnox_cursoiabigdata@gmail.com
+	CC: julioalbertolopezgomez@gmail.com
+	Asunto: Tutoría
+	Cuerpo: Estimado Alumno X. Las tutorías de este semana se desarrollarán el próximo Jueves de 18:00 a 19:00 horas. Saludos. Julio A.  -->
+
+<!-- <E-mail>
+    <De> JulioAlberto.Lopez@uclm.es </De>
+    <Para> alumnox_cursoiabigdata@gmail.com </Para>
+    <CC> julioalbertolopezgomez@gmail.com </CC>
+    <Asunto> Tutoría </Asunto>
+    <Cuerpo> Estimado Alumno X. Las tutorías de este semana se desarrollarán el próximo Jueves de 18:00 a 19:00 horas. Saludos. Julio A. </Cuerpo>
+</E-mail> -->
+
+
+
+
+<!-- MODIFICACIÓN -->
+<E-mail>
+    <De>JulioAlberto.Lopez@uclm.es</De>
+    <Para>alumnox_cursoiabigdata@gmail.com</Para>
+    <Para>alumnoy_cursoiabigdata@gmail.com</Para>
+    <Para>alumnoz_cursoiabigdata@gmail.com</Para>
+    <CC>julioalbertolopezgomez@gmail.com</CC>
+    <Asunto>Tutoría</Asunto>
+    <Cuerpo>Estimado Alumno X. Las tutorías de esta semana se desarrollarán el próximo Jueves de 18:00 a 19:00 horas. Saludos. Julio A.</Cuerpo>
+</E-mail>

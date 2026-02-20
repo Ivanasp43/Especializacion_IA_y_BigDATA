@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FacturaSimplificada numero="F190030" fecha="2019-09-25">
+
+   <Emisor>
+      <Nombre>Holded SA</Nombre>
+      <Direccion>Joan de Borbó, 101</Direccion>
+      <Ciudad>Barcelona</Ciudad>
+      <CodigoPostal>08001</CodigoPostal>
+      <Pais>España</Pais>
+      <NIF>XXXXXXXXX</NIF>
+      <Email>alodia.salas@holded.com</Email>
+      <Telefono>932710167</Telefono>
+   </Emisor>
+
+   <Cliente>
+      <Nombre>Holded Technologies</Nombre>
+      <NIF>XXXXXXXXX</NIF>
+      <Telefono>932710167</Telefono>
+   </Cliente>
+
+   <Conceptos>
+
+      <Concepto>
+         <Descripcion>Gafas sol Warfare</Descripcion>
+         <PrecioUnidad>90.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>90.00</Subtotal>
+         <IVA porcentaje="21">18.90</IVA>
+         <Total>108.90</Total>
+      </Concepto>
+
+      <Concepto>
+         <Descripcion>VANS bambas (bamba de color negro old school)</Descripcion>
+         <PrecioUnidad>70.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>70.00</Subtotal>
+         <IVA porcentaje="21">14.70</IVA>
+         <Total>84.70</Total>
+      </Concepto>
+
+      <Concepto>
+         <Descripcion>Beanie (Talla M)</Descripcion>
+         <PrecioUnidad>25.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>25.00</Subtotal>
+         <IVA porcentaje="21">5.25</IVA>
+         <Total>30.25</Total>
+      </Concepto>
+
+      <Concepto>
+         <Descripcion>Tabla de surf (Modelo 6.3)</Descripcion>
+         <PrecioUnidad>356.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>356.00</Subtotal>
+         <IVA porcentaje="21">74.76</IVA>
+         <Total>430.76</Total>
+      </Concepto>
+
+      <Concepto>
+         <Descripcion>Camiseta Nike (Negra L)</Descripcion>
+         <PrecioUnidad>22.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>22.00</Subtotal>
+         <IVA porcentaje="21">4.62</IVA>
+         <Total>26.62</Total>
+      </Concepto>
+
+      <Concepto>
+         <Descripcion>Camiseta Nike (Blanca XL)</Descripcion>
+         <PrecioUnidad>22.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>22.00</Subtotal>
+         <IVA porcentaje="21">4.62</IVA>
+         <Total>26.62</Total>
+      </Concepto>
+
+      <Concepto>
+         <Descripcion>Guantes (Piel reforzada / negro)</Descripcion>
+         <PrecioUnidad>12.00</PrecioUnidad>
+         <Unidades>1</Unidades>
+         <Subtotal>12.00</Subtotal>
+         <IVA porcentaje="21">2.52</IVA>
+         <Total>14.52</Total>
+      </Concepto>
+
+   </Conceptos>
+
+   <Totales>
+      <BaseImponible>597.00</BaseImponible>
+      <IVA porcentaje="21">125.37</IVA>
+      <TotalFactura>722.37</TotalFactura>
+   </Totales>
+
+   <Pago>
+      <Metodo>Transferencia bancaria</Metodo>
+      <IBAN>ES662100184012345679</IBAN>
+   </Pago>
+
+</FacturaSimplificada>

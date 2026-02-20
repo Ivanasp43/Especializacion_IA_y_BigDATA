@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Escribe un documento XML bien formado para representar el índice de contenidos de la entrada en Wikipedia sobre el escritor español de la generación del 27 Pedro Salinas   -->
+
+<!-- <Autor>
+   <Nombre> Pedro Salinas </Nombre>
+   <Indice>
+   	<Elemento> Biografía
+   		<Subelemento> Primeros años </Subelemento>
+   		<Subelemento> Matrimonio y cátedra </Subelemento>
+   		<Subelemento> Santander </Subelemento>
+   		<Subelemento> Guerra civil y exilio </Subelemento>
+   	</Elemento>
+
+   	<Elemento> Poeta del 27
+   		<Subelemento> Etapas poéticas </Subelemento>
+   		<Subelemento> Poeta del amor </Subelemento>
+   	</Elemento>
+
+      <Elemento> Prosista </Elemento>
+	   <Elemento> Dramaturgo </Elemento>
+
+      <Elemento> Obra
+   		<Subelemento> Poesía </Subelemento>
+   		<Subelemento> Teatro </Subelemento>
+   		<Subelemento> Traducciones </Subelemento>
+   		<Subelemento> Narrativa </Subelemento>
+   		<Subelemento> Ensayo </Subelemento>
+		   <Subelemento> Epistolario </Subelemento>
+	   </Elemento>
+
+	  <Elemento> Referencias </Elemento>
+     <Elemento> Notas </Elemento>
+	  <Elemento> Bibliografía </Elemento>
+		
+   </Indice>
+</Autor> -->
+
+
+<!-- Modificación -->
+
+<Autor>
+   <Nombre>Pedro Salinas</Nombre>
+   <Indice>
+      <Elemento>Biografía
+         <Subelemento>Primeros años</Subelemento>
+         <Subelemento>Matrimonio y cátedra</Subelemento>
+         <Subelemento>Santander</Subelemento>
+         <Subelemento>Guerra civil y exilio</Subelemento>
+      </Elemento>
+
+      <Elemento>Poeta del 27
+         <Subelemento>Etapas poéticas</Subelemento>
+         <Subelemento>Poeta del amor</Subelemento>
+      </Elemento>
+
+      <Elemento>Prosista</Elemento>
+      <Elemento>Dramaturgo</Elemento>
+
+      <Elemento>Obra
+         <Subelemento>Poesía
+            <ObraPoetica>
+               <Obra>
+                  <Titulo>Presagio</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Índice</Editorial>
+                  <Año>1923</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Seguro azar</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Revista de Occidente</Editorial>
+                  <Año>1929</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Fábula y signo</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Plutarco</Editorial>
+                  <Año>1931</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>La voz a ti debida</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Signo</Editorial>
+                  <Año>1933</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Razón de amor</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Ediciones del Árbol; Cruz y Raya</Editorial>
+                  <Año>1936</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Lost Angel and Other Poems</Titulo>
+                  <Lugar>Baltimore</Lugar>
+                  <Editorial>The Johns Hopkins Press</Editorial>
+                  <Año>1938</Año>
+                  <Nota>Antología bilingüe con poemas inéditos. Trad. de Eleanor L. Thurnbull.</Nota>
+               </Obra>
+               <Obra>
+                  <Titulo>Poesía junta</Titulo>
+                  <Lugar>Buenos Aires</Lugar>
+                  <Editorial>Losada</Editorial>
+                  <Año>1942</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>El contemplado (Mar; poema)</Titulo>
+                  <Lugar>México</Lugar>
+                  <Editorial>Nueva Floresta; Stylo</Editorial>
+                  <Año>1946</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Todo más claro y otros poemas</Titulo>
+                  <Lugar>Buenos Aires</Lugar>
+                  <Editorial>Sudamericana</Editorial>
+                  <Año>1949</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Poesías completas</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Aguilar</Editorial>
+                  <Año>1955</Año>
+                  <Nota>Incluye el libro inédito "Confianza".</Nota>
+               </Obra>
+               <Obra>
+                  <Titulo>Poesías completas</Titulo>
+                  <Lugar>Madrid</Lugar>
+                  <Editorial>Aguilar</Editorial>
+                  <Año>1956</Año>
+                  <Nota>Edición de Juan Marichal.</Nota>
+               </Obra>
+               <Obra>
+                  <Titulo>Volverse y otros poemas</Titulo>
+                  <Lugar>Milán</Lugar>
+                  <Editorial>All'insegna del pesce d'oro</Editorial>
+                  <Año>1957</Año>
+               </Obra>
+               <Obra>
+                  <Titulo>Poesías completas</Titulo>
+                  <Lugar>Barcelona</Lugar>
+                  <Editorial>Barral</Editorial>
+                  <Año>1971</Año>
+               </Obra>
+            </ObraPoetica>
+         </Subelemento>
+
+         <Subelemento>Teatro</Subelemento>
+         <Subelemento>Traducciones</Subelemento>
+         <Subelemento>Narrativa</Subelemento>
+         <Subelemento>Ensayo</Subelemento>
+         <Subelemento>Epistolario</Subelemento>
+      </Elemento>
+
+      <Elemento>Referencias</Elemento>
+      <Elemento>Notas</Elemento>
+      <Elemento>Bibliografía</Elemento>
+   </Indice>
+</Autor>
+

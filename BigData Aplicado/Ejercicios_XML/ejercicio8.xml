@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diploma>
+    <Institucion>
+        <Nombre>INSTITUTO ESPAÑOL DE MEDICINAS ALTERNATIVAS (INSESMA)</Nombre>
+        <Logo>Certificado por APTN COFENAT</Logo>
+    </Institucion>
+    <Certificacion>
+        <TextoIntroductorio>El Instituto Español de Medicinas Alternativas (INSESMA) certifica que</TextoIntroductorio>
+        <Alumno>Joaquín Catalán Flores</Alumno>
+        <CuerpoTexto>ha realizado la formación y superado todas las pruebas exigidas, siendo por tanto</CuerpoTexto>
+        <TituloObtenido>DIPLOMADO SUPERIOR EN OSTEOPATÍA</TituloObtenido>
+    </Certificacion>
+    <Expedicion>
+        <Lugar>Castellón (España)</Lugar>
+        <FechaCompleta>XX de XXXXX de 2015</FechaCompleta>
+    </Expedicion>
+    <Firmas>
+        <Firma tipo="Alumno"/>
+        <Firma tipo="Profesor"/>
+        <Firma tipo="Director"/>
+    </Firmas>
+</Diploma>

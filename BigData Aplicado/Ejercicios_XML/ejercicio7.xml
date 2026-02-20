@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ALBARAN>
+    <CABECERA>
+        <TITULO_ALBARAN>ALBARAN Nº</TITULO_ALBARAN>
+        <NUMERO></NUMERO>
+        <FECHA>
+            <DIA></DIA>
+            <MES></MES>
+            <ANO></ANO>
+        </FECHA>
+    </CABECERA>
+
+    <DATOS_RECEPTOR>
+        <CLIENTE></CLIENTE>
+        <NIF></NIF>
+        <DOMICILIO></DOMICILIO>
+        <POBLACION></POBLACION>
+        <PROVINCIA></PROVINCIA>
+    </DATOS_RECEPTOR>
+
+    <DETALLE_ARTICULOS>
+        <LINEA>
+            <CANTIDAD></CANTIDAD>
+            <CODIGO></CODIGO>
+            <REFERENCIA-ARTICULO></REFERENCIA-ARTICULO>
+            <PRECIO></PRECIO>
+            <EUROS></EUROS>
+        </LINEA>
+    </DETALLE_ARTICULOS>
+
+    <PIE_ALBARAN>
+        <OBSERVACIONES></OBSERVACIONES>
+        <AGENTE></AGENTE>
+        <BULTOS></BULTOS>
+        <CONFORME_CLIENTE></CONFORME_CLIENTE>
+        <FORMA_PAGO></FORMA_PAGO>
+        <PORTES></PORTES>
+    </PIE_ALBARAN>
+</ALBARAN>

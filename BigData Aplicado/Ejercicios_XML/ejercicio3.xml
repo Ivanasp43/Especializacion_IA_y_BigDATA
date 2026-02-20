@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Escribe un documento XML bien formado para representar el índice de contenidos de la entrada en Wikipedia sobre el escritor español de la generación del 27 Pedro Salinas   -->
+
+<!-- Autor>
+   <Nombre> Pedro Salinas </Nombre>
+   <Indice>
+   	<Elemento> Biografía
+   		<Subelemento> Primeros años </Subelemento>
+   		<Subelemento> Matrimonio y cátedra </Subelemento>
+   		<Subelemento> Santander </Subelemento>
+   		<Subelemento> Guerra civil y exilio </Subelemento>
+   	</Elemento>
+
+   	<Elemento> Poeta del 27
+   		<Subelemento> Etapas poéticas </Subelemento>
+   		<Subelemento> Poeta del amor </Subelemento>
+   	</Elemento>
+
+      <Elemento> Prosista </Elemento>
+	   <Elemento> Dramaturgo </Elemento>
+
+      <Elemento> Obra
+   		<Subelemento> Poesía </Subelemento>
+   		<Subelemento> Teatro </Subelemento>
+   		<Subelemento> Traducciones </Subelemento>
+   		<Subelemento> Narrativa </Subelemento>
+   		<Subelemento> Ensayo </Subelemento>
+		   <Subelemento> Epistolario </Subelemento>
+	   </Elemento>
+
+	  <Elemento> Referencias </Elemento>
+     <Elemento> Notas </Elemento>
+	  <Elemento> Bibliografía </Elemento>
+		
+   </Indice>
+</Autor> -->
+
+
+<!-- Modificación -->
+
+<Autor nombre="Pedro Salinas">
+   <Indice>
+      <Elemento nombre="Biografía">
+         <Subelemento nombre="Primeros años"/>
+         <Subelemento nombre="Matrimonio y cátedra"/>
+         <Subelemento nombre="Santander"/>
+         <Subelemento nombre="Guerra civil y exilio"/>
+      </Elemento>
+
+      <Elemento nombre="Poeta del 27">
+         <Subelemento nombre="Etapas poéticas"/>
+         <Subelemento nombre="Poeta del amor"/>
+      </Elemento>
+
+      <Elemento nombre="Prosista"/>
+      <Elemento nombre="Dramaturgo"/>
+
+      <Elemento nombre="Obra">
+         <Subelemento nombre="Poesía"/>
+         <Subelemento nombre="Teatro"/>
+         <Subelemento nombre="Traducciones"/>
+         <Subelemento nombre="Narrativa"/>
+         <Subelemento nombre="Ensayo"/>
+         <Subelemento nombre="Epistolario"/>
+      </Elemento>
+
+      <Elemento nombre="Referencias"/>
+      <Elemento nombre="Notas"/>
+      <Elemento nombre="Bibliografía"/>
+   </Indice>
+</Autor>
